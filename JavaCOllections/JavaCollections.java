@@ -1,0 +1,36 @@
+import java.util.*;
+public class JavaCollections{
+public static void main(String[] args){
+List<String> list=new ArrayList<>();
+list.add("Apple");
+list.add("Banana");
+list.add("Apple");
+System.out.println("ArrayList:"+list);
+
+
+Set<String> set=new HashSet<>();
+set.add("Apple");
+set.add("Banana");
+set.add("Apple");
+System.out.println("HashSet:"+set);
+
+Map<Integer,String> map=new HashMap<>();
+map.put(1, "Apple");
+map.put(2, "Banana");
+map.put(1, "Orange");
+System.out.println("HashMaps:"+map);
+
+Queue <Integer> queue=new PriorityQueue<>();
+queue.add(10);
+queue.add(5);
+queue.add(20);
+System.out.println("PriortyQueue:"+queue);
+
+Deque<String> deque=new ArrayDeque<>();
+deque.addFirst("First");
+deque.addLast("Last");
+System.out.println("ArrayDeque:"+deque);
+
+}
+}
+  
